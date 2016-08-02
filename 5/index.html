@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>React Js Tutorial</title>
+  <script src="https://fb.me/react-15.3.0.min.js"></script>
+  <script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+</head>
+<body>
+
+  <script type="text/babel">
+  var HelloWorld = React.createClass({
+    render: function() {
+      return <div>
+        <h1>Hello World</h1>
+        <p>www.vestacamp.ir</p>
+      </div>
+    }
+  });
+
+  // After React 0.14 React.render moved to ReactDOM.render
+  ReactDOM.render(<HelloWorld/>, document.body);
+
+  // 1 - If you want to create an interface ( use several tags instead of just one div)
+  //  you should use JSX or newerly use Balel
+  // Babel is a javascript compiler (javascript compiler? :) )
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>React Js Tutorial</title>
+  <script src="https://fb.me/react-15.3.0.min.js"></script>
+  <script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    var MyComponent = React.createClass({
+      render: function() {
+        return (
+          <div>
+          <h1>{this.props.text}</h1>
+          <p>{this.props.children}</p>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <section>
+        <MyComponent text='Hello'>This is hello.  </MyComponent>
+        <MyComponent text='How are you?'>This is how are you. </MyComponent>
+        <MyComponent text='Can you here me?'>This is can you here me. </MyComponent>
+      </section>, document.getElementById('react-container')
+    );
+
+  </script>
+</body>
+</html>
